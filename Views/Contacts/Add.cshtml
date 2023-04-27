@@ -1,0 +1,27 @@
+@model ContactList.Models.AddContactViewModel
+
+<h2>Add Contact</h2>
+<hr>
+<form action="Add" method="post">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Primary Mobile No.</label>
+        <input type="number" class="form-control" asp-for="PriMobileNo">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Secondary Mobile No.</label>
+        <input type="number" class="form-control" asp-for="SecMobileNo">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

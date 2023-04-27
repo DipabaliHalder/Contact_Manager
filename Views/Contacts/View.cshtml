@@ -1,0 +1,32 @@
+@model ContactList.Models.UpdateContactViewModel
+
+<h2>Edit Contact</h2>
+<hr>
+<form action="View" method="post">
+    <div class="mb-3">
+        <label class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Primary Mobile No.</label>
+        <input type="number" class="form-control" asp-for="PriMobileNo">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Secondary Mobile No.</label>
+        <input type="number" class="form-control" asp-for="SecMobileNo">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <button type="submit" class="btn btn-danger" asp-action="Delete" asp-controller="Contacts" onclick="return confirm('Are you sure you want to delete this contact?')">Delete</button>
+</form>
