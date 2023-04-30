@@ -1,5 +1,7 @@
-namespace ContactList.Models{
-    public class AddContactViewModel{
+﻿namespace ContactList.Models
+{
+    public class AddContactViewModel
+    {
         public string Name { get; set; }
         public string Email { get; set; }
         public string PriMobileNo { get; set; }

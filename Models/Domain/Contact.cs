@@ -1,6 +1,7 @@
-
-namespace ContactList.Models.Domain{
-    public class Contact{
+﻿namespace ContactList.Models.Domain
+{
+    public class Contact
+    {
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }

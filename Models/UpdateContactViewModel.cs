@@ -1,5 +1,7 @@
-namespace ContactList.Models{
-    public class UpdateContactViewModel{
+﻿namespace ContactList.Models
+{
+    public class UpdateContactViewModel
+    {
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
